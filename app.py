@@ -32,8 +32,8 @@ linguas = {
     "Espanhol": "es",
     "Francês": "fr",
     "Alemão": "de",
-    "Italiano": "it"
-    "Japones": "ja"
+    "Italiano": "it",
+    "Japonês": "ja"
 }
 
 idiomas_escolhidos = st.multiselect("Selecione os idiomas de destino:", list(linguas.keys()), ["Japones","Inglês", "Espanhol","Alemão"])
@@ -50,4 +50,5 @@ if st.button("Traduzir"):
             st.write(f'**Original:** {texto}')
             st.write(f'**Traduzido:** {traducao}')
             st.write("---")
+
 
