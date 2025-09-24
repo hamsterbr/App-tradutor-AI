@@ -1,6 +1,25 @@
 import streamlit as st
 from deep_translator import GoogleTranslator
 
+# NOVO CÓDIGO PARA O BACKGROUND
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://get.wallhere.com/photo/anime-Love-Live-Minami-Kotori-bikini-anime-girls-1375151.jpg?q=80&w=1974&auto=format&fit=crop");
+             background-attachment: fixed;
+             background-size: cover;
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+# Chamada da função para aplicar o background
+add_bg_from_url()
+# FIM DO NOVO CÓDIGO
+
 st.title("🌍 Tradutor do Ratão")
 
 #Área de textos
@@ -30,6 +49,3 @@ if st.button("Traduzir"):
             st.write(f'**Original:** {texto}')
             st.write(f'**Traduzido:** {traducao}')
             st.write("---")
-
-
-
