@@ -1,5 +1,5 @@
-#import streamlit as st
-#from deep_translator import GoogleTranslator
+import streamlit as st
+from deep_translator import GoogleTranslator
 
 st.title("🌍 Tradutor Multilíngue com Deep Translator")
 
@@ -30,4 +30,5 @@ if st.button("Traduzir"):
             st.write(f'**Original:** {texto}')
             st.write(f'**Traduzido:** {traducao}')
             st.write("---")
+
 
